@@ -3,12 +3,12 @@ from .files_operations import FilesOperations
 from .processes_operations import ProcessesOperations
 from .sys_operations import SysOperations
 from .network_operations import NetworkOperations
-from .password_operations import PasswordOperations
+from .password_operations import ChromePasswordExtractor  # Import the correct class
 
 __all__ = [
     "FilesOperations",
     "ProcessesOperations",
     "SysOperations",
     "NetworkOperations",
-    "PasswordOperations"  # Add this
+    "ChromePasswordExtractor"  # Now matches the import
 ]
