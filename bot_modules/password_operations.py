@@ -7,6 +7,7 @@ import csv
 import secrets
 import hashlib
 import json
+import base64
 from pathlib import Path
 import win32crypt
 from Crypto.Cipher import AES
